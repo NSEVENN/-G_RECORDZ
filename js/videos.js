@@ -1,7 +1,7 @@
 const videos = [
 
 {
-title: "$G RECORDZ // $G DEMENTOR",
+title: "$G RECORDZ //     $G DEMENTOR",
 description: "Official Video",
 youtube: "https://youtu.be/VuVZ9FIOs9Y?si=s2ru6fwUqAtTW05s"
 },
@@ -13,13 +13,13 @@ youtube: "https://www.youtube.com/watch?v=8fANce66T5w"
 },
 
 {
-title: "$G RECORDZ // GOLDIN REAL DEAL",
+title: "$G RECORDZ //     GOLDIN REAL DEAL",
 description: "Official Video",
 youtube: "https://www.youtube.com/watch?v=G52EqXEuAu0&t=213s"
 },
 
 {
-title: "$G RECORDZ // BANDZ COMING 2",
+title: "$G RECORDZ //    BANDZ COMING 2",
 description: "Official Video",
 youtube: "https://www.youtube.com/watch?v=nR65b8FSpNQ"
 },
