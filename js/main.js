@@ -16,9 +16,6 @@ window.addEventListener("load", () => {
 
 });
 
-/* ==========================
-   HEADER
-========================== */
 
 const header = document.querySelector("header");
 
@@ -36,9 +33,6 @@ window.addEventListener("scroll", () => {
 
 });
 
-/* ==========================
-   SMOOTH SCROLL
-========================== */
 
 document.querySelectorAll('a[href^="#"]').forEach(link => {
 
@@ -62,9 +56,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
 });
 
-/* ==========================
-   APPEAR ANIMATION
-========================== */
 
 const observer = new IntersectionObserver(entries => {
 
@@ -96,9 +87,6 @@ function observeElements(){
 
 setTimeout(observeElements, 100);
 
-/* ==========================
-   HERO PARALLAX
-========================== */
 
 const hero = document.querySelector(".hero");
 
@@ -112,9 +100,6 @@ window.addEventListener("mousemove", e => {
 
 });
 
-/* ==========================
-   VIDEO HOVER
-========================== */
 
 document.addEventListener("mouseover", e => {
 
@@ -136,31 +121,6 @@ document.addEventListener("mouseout", e => {
 
 });
 
-/* ==========================
-   FLOAT EFFECT
-========================== */
-
-let lastScroll = 0;
-
-window.addEventListener("scroll", () => {
-
-    const current = window.scrollY;
-
-    document.querySelectorAll(".video-card").forEach((card, i) => {
-
-        const speed = (i % 3 + 1) * 0.03;
-
-        card.style.transform = `translateY(${current * speed}px)`;
-
-    });
-
-    lastScroll = current;
-
-});
-
-/* ==========================
-   RANDOM HERO TEXT
-========================== */
 
 const subtitle = document.querySelector(".hero span");
 
