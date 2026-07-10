@@ -126,13 +126,13 @@ const subtitle = document.querySelector(".hero span");
 
 const texts = [
 
-"CREATIVE LABEL",
+"REL1NSE",
 
-"DARK VISUALS",
+"NSEVENN",
 
-"MUSIC VIDEOS",
+"BOB",
 
-"CINEMATIC PRODUCTION"
+"MOZAMBIQUE"
 
 ];
 
