@@ -6,7 +6,9 @@ addDoc,
 getDocs,
 query,
 orderBy,
-serverTimestamp
+serverTimestamp,
+deleteDoc,
+doc
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const modal=document.getElementById("uploadModal");
@@ -93,7 +95,7 @@ return match?match[1]:null;
 
 }
 
-function createCard(data){
+function createCard(id,data){
 
 const id=getId(data.youtube);
 
