@@ -6,9 +6,7 @@ addDoc,
 getDocs,
 query,
 orderBy,
-serverTimestamp,
-deleteDoc,
-doc
+serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const modal=document.getElementById("uploadModal");
@@ -95,7 +93,7 @@ return match?match[1]:null;
 
 }
 
-function createCard(id,data){
+function createCard(data){
 
 const id=getId(data.youtube);
 
@@ -104,12 +102,6 @@ const thumb=`https://img.youtube.com/vi/${id}/maxresdefault.jpg`;
 const card=document.createElement("div");
 
 card.className="highlight-card";
-
-const remove=document.createElement("div");
-
-remove.className="delete-btn";
-
-remove.innerHTML="🗑";
 
 card.innerHTML=`
 
@@ -133,21 +125,7 @@ card.innerHTML=`
 
 `;
 
-card.appendChild(remove);
-
 card.onclick=()=>{
-
-remove.onclick=async(e)=>{
-
-e.stopPropagation();
-
-if(!confirm("Delete this highlight?")) return;
-
-await deleteDoc(doc(db,"highlights",id));
-
-card.remove();
-
-};
 
 iframe.src=`https://www.youtube.com/embed/${id}?autoplay=1`;
 
@@ -173,9 +151,9 @@ orderBy("created","desc")
 
 const snap=await getDocs(q);
 
-snap.forEach(item=>{
+snap.forEach(doc=>{
 
-createCard(item.id,item.data());
+createCard(doc.data());
 
 });
 
