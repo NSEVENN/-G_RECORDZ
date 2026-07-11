@@ -1337,4 +1337,50 @@ button{
 
     }
 
+    .delete-btn{
+
+position:absolute;
+
+top:12px;
+
+right:12px;
+
+width:38px;
+
+height:38px;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:rgba(255,40,40,.9);
+
+font-size:18px;
+
+cursor:pointer;
+
+opacity:0;
+
+transition:.3s;
+
+z-index:20;
+
+}
+
+.highlight-card{
+
+position:relative;
+
+}
+
+.highlight-card:hover .delete-btn{
+
+opacity:1;
+
+}
+
 }
