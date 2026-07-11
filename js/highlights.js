@@ -105,6 +105,12 @@ const card=document.createElement("div");
 
 card.className="highlight-card";
 
+const remove=document.createElement("div");
+
+remove.className="delete-btn";
+
+remove.innerHTML="🗑";
+
 card.innerHTML=`
 
 <img src="${thumb}">
@@ -127,7 +133,21 @@ card.innerHTML=`
 
 `;
 
+card.appendChild(remove);
+
 card.onclick=()=>{
+
+remove.onclick=async(e)=>{
+
+e.stopPropagation();
+
+if(!confirm("Delete this highlight?")) return;
+
+await deleteDoc(doc(db,"highlights",id));
+
+card.remove();
+
+};
 
 iframe.src=`https://www.youtube.com/embed/${id}?autoplay=1`;
 
