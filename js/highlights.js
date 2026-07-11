@@ -153,9 +153,9 @@ orderBy("created","desc")
 
 const snap=await getDocs(q);
 
-snap.forEach(doc=>{
+snap.forEach(item=>{
 
-createCard(doc.data());
+createCard(item.id,item.data());
 
 });
 
