@@ -271,8 +271,6 @@ nav a:hover{
 .hero-btn{
 
     height:50px;
-    
-    margin-top:40px;
 
     padding:0 32px;
 
@@ -389,6 +387,11 @@ section{
 
 }
 
+#openUpload{
+    display:block;
+    margin: 0 auto 80px auto;
+}
+
 
 #video-grid{
 
@@ -475,11 +478,6 @@ section{
 
 #highlights{
     padding-top:160px;
-}
-
-.highlight-actions{
-    margin-top:-80px;
-    margin-bottom:80px;
 }
 
 
