@@ -157,3 +157,27 @@ setInterval(() => {
     },250);
 
 },4000);
+
+async function checkTwitch(){
+
+    try{
+
+        const res = await fetch("/api/twitch");
+
+        const data = await res.json();
+
+        if(data.live){
+
+            document.getElementById("twitch-live").style.display="block";
+
+        }
+
+    }catch(e){
+
+        console.log(e);
+
+    }
+
+}
+
+checkTwitch();
