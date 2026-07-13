@@ -268,7 +268,7 @@ nav a:hover{
 
     font-weight:600;
 
-    letter-spacing:2px;
+    letter-spacing:15px;
 
     text-transform:uppercase;
 
@@ -303,7 +303,7 @@ nav a:hover{
 
 .hero-btn:hover{
 
-    transform:translateY(-15px);
+    transform:translateY(-2px);
 
 }
 
@@ -1095,7 +1095,7 @@ footer{
 
     .hero-btn{
 
-        width:100%;
+        width:80%;
 
     }
 
