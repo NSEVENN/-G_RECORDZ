@@ -249,19 +249,18 @@ function animate(){
 
     clouds.forEach(c=>c.draw());
 
-    if(Math.random()>.992){
-
-        bolts.push(new Lightning());
-
-        flashes.push(new Flash());
-
-    }
-
     if(Math.random()>.998){
 
-        bolts.push(new Lightning());
+    bolts.push(new Lightning());
+    flashes.push(new Flash());
 
-    }
+}
+
+if(Math.random()>.9995){
+
+    bolts.push(new Lightning());
+
+}
 
     flashes.forEach((f,i)=>{
 
