@@ -221,14 +221,12 @@ nav a:hover{
 
 
 .hero p{
-
-    margin-top:35px;
-
+    margin-top:25px;
+    margin-bottom:60px;
     font-size:18px;
-
     opacity:.75;
-
 }
+
 .hero-buttons{
 
     display:flex;
@@ -1095,7 +1093,7 @@ footer{
 
     .hero-btn{
 
-        width:80%;
+        width:100%;
 
     }
 
