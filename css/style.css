@@ -237,7 +237,7 @@ nav a:hover{
 
     gap:20px;
 
-    margin-top:45px;
+    margin-top:55px;
 
     flex-wrap:wrap;
 
@@ -364,11 +364,6 @@ section{
 }
 
 
-
-
-/* VIDEOS */
-
-
 #video-grid{
 
     max-width:1400px;
@@ -450,10 +445,6 @@ section{
     font-size:14px;
 
 }
-
-
-
-/* HIGHLIGHTS */
 
 
 #highlights{
@@ -713,10 +704,6 @@ margin-bottom:60px;
 }
 
 
-
-/* VIDEO PLAYER */
-
-
 .video-modal{
 
     position:fixed;
@@ -768,10 +755,6 @@ margin-bottom:60px;
     cursor:pointer;
 
 }
-
-
-
-/* CONTACTS */
 
 
 .contact-grid{
@@ -880,10 +863,6 @@ footer{
 }
 
 
-
-/* DESKTOP FIX */
-
-
 @media(max-width:1300px){
 
 
@@ -953,11 +932,6 @@ footer{
 
 
 }
-
-
-
-
-/* TABLET */
 
 
 @media(max-width:768px){
@@ -1067,11 +1041,6 @@ footer{
 }
 
 
-
-
-/* MOBILE */
-
-
 @media(max-width:480px){
 
 
@@ -1160,7 +1129,7 @@ footer{
 
 
 }
-/* ANIMATIONS */
+
 
 
 .hero-content,
@@ -1196,11 +1165,6 @@ to{
 }
 
 
-
-
-/* SMOOTH DARK OVERLAY */
-
-
 body::after{
 
     content:"";
@@ -1230,11 +1194,6 @@ body::after{
 }
 
 
-
-
-/* REMOVE OLD GLASS EFFECTS */
-
-
 header{
 
     background:transparent;
@@ -1248,20 +1207,11 @@ header{
 }
 
 
-
-
-/* BUTTON FIX */
-
-
 button{
 
     font-family:inherit;
 
 }
-
-
-
-/* SCROLLBAR */
 
 
 ::-webkit-scrollbar{
@@ -1294,10 +1244,6 @@ button{
 }
 
 
-
-/* SELECTION */
-
-
 ::selection{
 
     background:white;
@@ -1305,10 +1251,6 @@ button{
     color:black;
 
 }
-
-
-
-/* MOBILE VIDEO FIX */
 
 
 @media(max-width:600px){
